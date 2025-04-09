@@ -80,8 +80,7 @@
     cursor: pointer;
 }
 
-/*Div del pollo*/
-.pollo {
+.bebidas {
     background-color: #3A3A3A;
     width: calc(100vw - 20vw);
     height: 100vh;
@@ -90,7 +89,7 @@
     left: 20vw;
     padding: 20px;
     box-sizing: border-box;
-    overflow-y: auto;
+    overflow-y: auto; 
 }
 
 .contenedores {

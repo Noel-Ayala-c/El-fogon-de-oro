@@ -1,6 +1,3 @@
-<input type="checkbox" id="menu-toggle" class="menu-toggle">
-<label for="menu-toggle" class="hamburger-icon">&#9776;</label>
-
 <div class="menu">
     <div class="menu-item">
         <img title="Logo del restaurante" 
@@ -8,7 +5,7 @@
             alt="Logo del restaurante">
     </div>
 
-    <div class="menu-item">
+    <div (click)="irAlDashboard()" class="menu-item">
         <img src="https://peruretail.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/pollo-a-la-brasa.jpg" alt="Pollo a la brasa">
         <div class="overlay">Pollo a la brasa</div>
     </div>
@@ -18,7 +15,7 @@
         <div class="overlay">A la carta</div>
     </div>
 
-    <div (click)="irABebidas()" class="menu-item">
+    <div class="menu-item">
         <img src="https://www.infobae.com/resizer/v2/W7QFISBITFELXEF2ECX2NSJA6Q.jpg?auth=fb1523ca768c332886fb3e78d6d3a3b8ef3676848f2e8d01627d12ee57983275&smart=true&width=350&height=197&quality=85" alt="Comida peruana">
         <div class="overlay">Bebidas</div>
     </div>
@@ -32,116 +29,105 @@
     <button (click)="irALogin()" class="c-sesion">Cerrar Sesión</button>
 </div>
 
-<div class="pollo">
+<div class="bebidas">
     <div class="contenedores">
         <!-- Cada contenedor -->
         <div class="contenedor">
             <div class="contenedor-img">
-                <img src="../../assets/imagen-1.png" alt="Imagen 1">
+                <img src="../../assets/inka.png" alt="Imagen 1">
             </div>
             <div class="contenedor-texto">
-                <h2>Brasa Familiar</h2>
-                <p>1 pollo + papas fritas fam , bot. inca kola 1.5L , salsas.</p>
-                <span>S/ 62.90</span> <br>
+                <h2>Inka Kola Sabor Original 500ml</h2>
+                <p>Inka Kola 500ml.</p>
+                <span>S/ 5.90</span> <br>
                 <button>Agregar</button>
             </div>
         </div>
         <div class="contenedor">
             <div class="contenedor-img">
-                <img src="../../assets/imagen-2.png" alt="Imagen 2">
+                <img src="../../assets/inka1.png" alt="Imagen 2">
             </div>
             <div class="contenedor-texto">
-                <h2>Brasa Dúo</h2>
-                <p>1/2 pollo , papas fritas med , 2 bot. inca kola 500ml , salsas.</p>
-                <span>S/ 32.90</span> <br>
+                <h2>Inka kola Sin-Azúcar 500ml</h2>
+                <p>Inka kola Zero 500ml.</p>
+                <span>S/ 5.90</span> <br>
                 <button>Agregar</button>
             </div>
         </div>
         <div class="contenedor">
             <div class="contenedor-img">
-                <img src="../../assets/imagen-3.png" alt="Imagen 3">
+                <img src="../../assets/coca.png" alt="Imagen 3">
             </div>
             <div class="contenedor-texto">
-                <h2>Brasa Personal</h2>
-                <p>1/4 pollo , papas fritas menú , bot. inca kola 500ml , salsas.</p>
-                <span>S/ 17.90</span> <br>
+                <h2>Coca Cola Sabor Original 500ml</h2>
+                <p>Coca cola 500ml.</p>
+                <span>S/ 5.90</span> <br>
                 <button>Agregar</button>
             </div>
         </div>
         <div class="contenedor">
             <div class="contenedor-img">
-                <img src="../../assets/imagen-9.png" alt="Imagen 4">
+                <img src="../../assets/coca1.png" alt="Imagen 4">
             </div>
             <div class="contenedor-texto">
-                <h2>Lunes y Miércoles de Mostrito</h2>
-                <p>1 pollo + papas fritas fam , bot. inca kola 1.5L, salsas.</p>
-                <span>S/ 19.90</span> <br>
+                <h2>Coca Cola Sin-Azúcar 500ml</h2>
+                <p>Coca Cola Zero 500ml.</p>
+                <span>S/ 5.90</span> <br>
                 <button>Agregar</button>
             </div>
         </div>
         <div class="contenedor">
             <div class="contenedor-img">
-                <img src="../../assets/imagen-4.png" alt="Imagen 5">
+                <img src="../../assets/agua.png" alt="Imagen 5">
             </div>
             <div class="contenedor-texto">
-                <h2>Medi Mostrito</h2>
-                <p>1/2 Pollo Arroz chaufa mediana, Papas medianas y Salsas.</p>
-                <span>S/ 39.90</span> <br>
+                <h2>San Luis 750ml</h2>
+                <p>Agua San Luis.</p>
+                <span>S/ 5.90</span> <br>
                 <button>Agregar</button>
             </div>
         </div>
         <div class="contenedor">
             <div class="contenedor-img">
-                <img src="../../assets/imagen-5.png" alt="Imagen 6">
+                <img src="../../assets/inka1L.png" alt="Imagen 6">
             </div>
             <div class="contenedor-texto">
-                <h2>Clásico Super Contundente</h2>
-                <p>1/2 pollo , papas fritas med , 2 bot. inca kola 500ml , salsas.</p>
-                <span>S/ 32.90</span> <br>
+                <h2>Inka Kola 1.5 Lt</h2>
+                <p>Inka Kola 1.5Lt.</p>
+                <span>S/ 12.90</span> <br>
                 <button>Agregar</button>
             </div>
         </div>
         <div class="contenedor">
             <div class="contenedor-img">
-                <img src="../../assets/imagen-6.png" alt="Imagen 7">
+                <img src="../../assets/inka1L.png" alt="Imagen 7">
             </div>
             <div class="contenedor-texto">
-                <h2>Promo Personal</h2>
-                <p>1/4 pollo , papas fritas menú , bot. inca kola 500ml , salsas.</p>
-                <span>S/ 15.90</span> <br>
+                <h2>Inka Kola Sin-Azúcar 1.5 Lt</h2>
+                <p>Inka Kola Zero 1.5Lt.</p>
+                <span>S/ 12.90</span> <br>
                 <button>Agregar</button>
             </div>
         </div>
         <div class="contenedor">
             <div class="contenedor-img">
-                <img src="../../assets/imagen-7.png" alt="Imagen 8">
+                <img src="../../assets/coca1L.png" alt="Imagen 8">
             </div>
             <div class="contenedor-texto">
-                <h2>Promo Familiar</h2>
-                <p>1 Pollo Brasa + Papas fritas Familiares + Salsas.</p>
-                <span>S/ 59.90</span> <br>
+                <h2>Coca Cola 1.5Lt</h2>
+                <p>Coca Cola 1.5lt.</p>
+                <span>S/ 12.90</span> <br>
                 <button>Agregar</button>
             </div>
         </div>
         <div class="contenedor">
             <div class="contenedor-img">
-                <img src="../../assets/imagen-3.png" alt="Imagen 9">
+                <img src="../../assets/coca1L1.png" alt="Imagen 9">
             </div>
             <div class="contenedor-texto">
-                <h2>Clásico</h2>
-                <p>1/4 Brasa, 1 Papa Crocantita Personal, 1 Ensalada Fresca Personal, 1 Gaseosa Personal, Salsas.</p>
-                <span>S/ 18.90</span> <br>
-                <button>Agregar</button>
-            </div>
-        </div>
-        <div class="contenedor">
-            <div class="contenedor-img">
-                <img src="../../assets/imagen-9.png" alt="Imagen 10">
-            </div>
-            <div class="contenedor-texto">
-                <h2>Mostro</h2>
-                <p>1/4 Brasa, 1 Papa Crocantita Personal, 1 Arroz Chaufa Personal, 1 Gaseosa Personal, Salsas.</p>
-                <span>S/ 22.90</span> <br>
+                <h2>Coca Cola Sin-Azúcar 1.5Lt</h2>
+                <p>Coca Cola Zero 1.5lt.</p>
+                <span>S/ 12.90</span> <br>
                 <button>Agregar</button>
             </div>
         </div>

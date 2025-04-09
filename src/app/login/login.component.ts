@@ -11,7 +11,7 @@ export class LoginComponent {
   
   constructor(private router: Router) {}
 
-  irAlDashboard() {
-    this.router.navigate(['/dashboard']); // Cambié navigateByUrl por navigate
+  irAMesas() {
+    this.router.navigate(['/mesas']);
   }
 }

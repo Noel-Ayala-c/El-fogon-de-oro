@@ -1,0 +1,80 @@
+<div class="menu">
+    <div class="menu-item">
+        <img title="Logo del restaurante" 
+            src="../../assets/icono.jpg" 
+            alt="Logo del restaurante">
+    </div>
+
+    <div (click)="irAlDashboard()" class="menu-item">
+        <img src="https://peruretail.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/pollo-a-la-brasa.jpg" alt="Pollo a la brasa">
+        <div class="overlay">Pollo a la brasa</div>
+    </div>
+
+    <div (click)="irACarta()" class="menu-item">
+        <img src="https://www.paulinacocina.net/wp-content/uploads/2023/06/pollo-a-la-plancha-receta-1200x676.jpg" alt="Pollo a la plancha">
+        <div class="overlay">A la carta</div>
+    </div>
+
+    <div (click)="irABebidas()" class="menu-item">
+        <img src="https://www.infobae.com/resizer/v2/W7QFISBITFELXEF2ECX2NSJA6Q.jpg?auth=fb1523ca768c332886fb3e78d6d3a3b8ef3676848f2e8d01627d12ee57983275&smart=true&width=350&height=197&quality=85" alt="Comida peruana">
+        <div class="overlay">Bebidas</div>
+    </div>
+
+    <div class="menu-item">
+        <img src="https://images.aws.nestle.recipes/resized/2024_10_23T08_34_55_badun_images.badun.es_pastelitos_de_chocolate_blanco_y_queso_con_fresas_1290_742.jpg" alt="Postre">
+        <div class="overlay">Postre</div>
+    </div>
+
+    <button (click)="irABoleta()" class="boleta">Boleta</button>
+    <button (click)="irALogin()" class="c-sesion">Cerrar Sesión</button>
+</div>
+
+<div class="pollo">
+    <div class="contenedores">
+        <!-- Cada contenedor -->
+        <div class="contenedor">
+            <div class="contenedor-img">
+                <img src="https://dtsqpmpjezii4.cloudfront.net/media/app_ecommerce/products/images_desktops/6acbef4bd6fe450c841815814ce15fb0_2024_12_02_09_4_tuyzF0j.avif" alt="Imagen 1">
+            </div>
+            <div class="contenedor-texto">
+                <h2>Cheesecake de Fresa</h2>
+                <p>Cheesecake de Fresa acompañado de chantilly, fresas y menta decorativa.</p>
+                <span>S/ 23.90</span> <br>
+                <button>Agregar</button>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="contenedor-img">
+                <img src="https://dtsqpmpjezii4.cloudfront.net/media/app_ecommerce/products/images_desktops/6afa9384957f45b083b72a4364761d48_2024_06_11_12_46_20.avif   " alt="Imagen 2">
+            </div>
+            <div class="contenedor-texto">
+                <h2>Torta de Chocolate</h2>
+                <p>Torta de chocolate bañada en fudge casero con tiras de chocolate y fresas.</p>
+                <span>S/ 15.90</span> <br>
+                <button>Agregar</button>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="contenedor-img">
+                <img src="https://dtsqpmpjezii4.cloudfront.net/media/app_ecommerce/products/images_desktops/af2a93b7b6734dadb6d911f478c344bd_2024_06_11_12_33_13.avif" alt="Imagen 3">
+            </div>
+            <div class="contenedor-texto">
+                <h2>Crema Volteada</h2>
+                <p>Crema Volteada acompañada de chantilly y fresas.</p>
+                <span>S/ 15.90</span> <br>
+                <button>Agregar</button>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="contenedor-img">
+                <img src="https://dtsqpmpjezii4.cloudfront.net/media/app_ecommerce/products/images_desktops/0868ba03c3304e7b9557844bb5394477_2024_06_11_12_44_38.avif" alt="Imagen 4">
+            </div>
+            <div class="contenedor-texto">
+                <h2>Pie de limón</h2>
+                <p>Pie de limón acompañado de chantilly y menta decorativa.</p>
+                <span>S/ 15.90</span> <br>
+                <button>Agregar</button>
+            </div>
+        </div>
+    </div>
+</div>

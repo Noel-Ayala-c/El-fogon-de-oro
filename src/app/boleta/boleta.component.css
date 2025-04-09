@@ -1,0 +1,174 @@
+.menu {
+    background-color: #DAA520;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+}
+
+/* Contenedor de cada imagen */
+.menu-item {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+/* Imágenes */
+.menu-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Capa negra con opacidad*/
+.menu-item:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Texto sobre la imagen*/
+.menu-item:not(:first-child) .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Aumentar separación del logo */
+.menu-item:first-child {
+    margin-bottom: 80px;
+}
+
+.guardar {
+    padding: 15px 40px;
+    border-radius: 10px;
+    background-color: #3A3A3A;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.anular {
+    padding: 15px 48px;
+    border-radius: 10px;
+    background-color: #3A3A3A;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.c-sesion {
+    padding: 15px 15px;
+    border-radius: 10px;
+    background-color: #9F2B23;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container-descrip {
+    background-color: #3A3A3A;
+    width: calc(100vw - 20vw);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 20vw;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; 
+}
+
+.descrip{
+    width: 1200px;
+    height: 850px;
+    background-color: #D9D9D9;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.descrip h2{
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+}
+
+.total {
+    width: 300px;
+    height: 200px;
+    background-color: #FFD15E;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.total h2 {
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    
+}
+
+.total span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #165909;
+}
+
+
+.boleta{
+    width: 1000px;
+    height: 650px;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.tabla-simple {
+    width: 100%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.tabla-simple thead {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.tabla-simple th, .tabla-simple td {
+    border: 1px solid #ccc;
+    padding: 12px 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tabla-simple tbody tr:hover {
+    background-color: #f5f5f5;
+}

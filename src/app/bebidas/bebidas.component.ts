@@ -2,19 +2,19 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-dashboard',
+  selector: 'app-bebidas',
   imports: [],
-  templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css'
+  templateUrl: './bebidas.component.html',
+  styleUrl: './bebidas.component.css'
 })
-export class DashboardComponent {
+export class BebidasComponent {
   constructor(private router: Router) {}
 
   irACarta() {
     this.router.navigate(['/carta']);
   }
-  irABebidas(){
-    this.router.navigate(['/bebidas'])
+  irAlDashboard() {
+    this.router.navigate(['/dashboard']);
   }
   irAPostre(){
     this.router.navigate(['/postre'])
